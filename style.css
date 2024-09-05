@@ -8,7 +8,7 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    background-color: #FEFAE0;
+    background-color: #9CA986;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,4 +39,25 @@ input {
     margin-bottom: 15px;
     border-radius: 5px;
     border: 1px solid #ddd;
+}
+
+button {
+    padding: 10px;
+    background-color: #A28B55;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #BC9F8B;
+}
+
+.result {
+    margin-top: 20px;
+}
+
+#bmi-result {
+    font-weight: bold;
 }
