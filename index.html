@@ -7,7 +7,9 @@
 
     <!-- File CSS -->
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
     <div class="container">
         <h1>Check Your BMI</h1>
@@ -16,51 +18,27 @@
         <form id="bmi-form">
             <div class="input-group">
                 <label for="weight">Weight (kg) </label>
-                <input type="number" id="weight" name="weight" min="0" step="0.01" placeholder="0" required>
+                <input type="number" id="weight" name="weight" min="0" step="0.1" placeholder="0" required>
             </div>
             <div class="input-group">
-                <label for="height">Height (kg) </label>
-                <input type="number" id="height" name="height" min="0" step="0.01" placeholder="0" required>
+                <label for="height">Height (cm) </label>
+                <input type="number" id="height" name="height" min="0" step="0.1" placeholder="0" required>
             </div>
-            <div class="button-group">
-                <button type="reset" class="btn reset-btn">Reset</button>
-                <button type="submit" class="btn submit-btn">Submit</button>
+            <div class="button">
+                <button type="submit" class="btn submit-btn">Calculate BMI</button>
             </div>
         </form>
 
 
         <!-- Result -->
         <div class="result">
-            <p>Your BMI is</p>
-            <h2 id="bmi-value">0</h2>
-            <p id="bmi-status">N/A</p>
+            <p>Your BMI: </p>
+            <p>Status: </p>
         </div>
-
-        <!-- BMI Scale -->
-        <section class="bmi-scale">
-            <div style="--color: var(--underweight)">
-              <h4>Underweight</h4>
-              <p>&lt; 18.5</p>
-            </div>
-    
-            <div style="--color: var(--normal)">
-              <h4>Normal</h4>
-              <p>18.5 – 25</p>
-            </div>
-    
-            <div style="--color: var(--overweight)">
-              <h4>Overweight</h4>
-              <p>25 – 30</p>
-            </div>
-    
-            <div style="--color: var(--obese)">
-              <h4>Obese</h4>
-              <p>≥ 30</p>
-            </div>
-        </section>
     </div>
 
     <!-- File Javascript -->
     <script src="script.js"></script>
+    
 </body>
 </html>
