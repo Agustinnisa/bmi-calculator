@@ -14,7 +14,7 @@ document.getElementById('bmi-form').addEventListener('submit', function(event) {
         status = 'Underweight';
     } else if (bmi >= 18.5 && bmi < 24.9) {
         status = 'Normal Weight'
-    } else if (bmi >= 25 && 29.9) {
+    } else if (bmi >= 25 && bmi < 29.9) {
         status = 'Overweight';
     } else {
         status = 'Obesity'
