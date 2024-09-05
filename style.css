@@ -8,7 +8,7 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    background-color: #9CA986;
+    background-color: #FFF8E8;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,47 +17,107 @@ body {
 
 .container {
     background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    width: 300px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 350px;
     text-align: center;
 }
 
+.input-group {
+    margin-bottom: 15px;
+}
+
 h1 {
-    display: flex;
-    flex-direction: column;
+    margin-bottom: 20px;
+    font-size: 1.8em;
 }
 
 label {
+    font-weight: bold;
+    display: block;
     margin-bottom: 5px;
-    text-align: left;
 }
 
 input {
     padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 5px;
+    width: 100%;
     border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    text-align: center;
 }
 
-button {
-    padding: 10px;
-    background-color: #A28B55;
-    color: black;
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
+    font-size: 1em;
     cursor: pointer;
+    width: 48%;
+    font-weight: bold;
 }
 
 button:hover {
     background-color: #BC9F8B;
 }
 
-.result {
-    margin-top: 20px;
+.reset-btn {
+    background-color: #CDC2A5;
+    color: black;
 }
 
-#bmi-result {
+.submit-btn {
+    background-color: #00897b;
+    color: black;
+    
+}
+
+.result p {
+    font-size: 1.2em;
+}
+
+.result h2 {
+    font-size: 2.5em;
+    margin: 10px 0;
     font-weight: bold;
+}
+
+#bmi-scale {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+
+.bmi-range {
+    flex-grow: 1;
+    padding: 10px;
+    text-align: center;
+}
+
+.underweight {
+    background-color: #ffcc80;
+}
+
+.normal {
+    background-color: #80cbc4;
+}
+
+.overweight {
+    background-color: #ffab91;
+}
+
+.obese {
+    background-color: #e57373;
+}
+
+.bmi-range:not(:last-child) {
+    border-right: 2px solid white;
 }
