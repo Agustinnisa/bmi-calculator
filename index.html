@@ -36,13 +36,28 @@
             <p id="bmi-status">N/A</p>
         </div>
 
-        <!-- Scale -->
-        <div class="bmi-scale">
-            <div class="bmi-range underweight">Underweight <br>&lt; 18.5</div>
-            <div class="bmi-range normal">Normal <br>18.5 - 24.9</div>
-            <div class="bmi-range overweight">Overrweight <br>25 - 29.9</div>
-            <div class="bmi-range obese">Obese <br>&gt; 30</div>
-        </div>
+        <!-- BMI Scale -->
+        <section class="bmi-scale">
+            <div style="--color: var(--underweight)">
+              <h4>Underweight</h4>
+              <p>&lt; 18.5</p>
+            </div>
+    
+            <div style="--color: var(--normal)">
+              <h4>Normal</h4>
+              <p>18.5 – 25</p>
+            </div>
+    
+            <div style="--color: var(--overweight)">
+              <h4>Overweight</h4>
+              <p>25 – 30</p>
+            </div>
+    
+            <div style="--color: var(--obese)">
+              <h4>Obese</h4>
+              <p>≥ 30</p>
+            </div>
+        </section>
     </div>
 
     <!-- File Javascript -->
